@@ -62,6 +62,9 @@ class AdminPanelProvider extends PanelProvider
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
                 \TomatoPHP\FilamentUsers\FilamentUsersPlugin::make()
             ])
+            ->brandName('GIMS')
+            ->favicon(asset('agrologo.png'))
+            ->darkMode(false)
             ->authGuard('web')
             ->navigationGroups([
                 'Manage Inventory',
