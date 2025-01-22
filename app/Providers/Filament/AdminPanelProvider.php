@@ -59,7 +59,8 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->plugins([
-                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+                \TomatoPHP\FilamentUsers\FilamentUsersPlugin::make()
             ])
             ->authGuard('web')
             ->navigationGroups([
